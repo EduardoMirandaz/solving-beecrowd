@@ -1,0 +1,1 @@
+print('Feliz nat'+ int(input())*'a' +'l!')
