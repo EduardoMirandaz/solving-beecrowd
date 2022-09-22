@@ -3,7 +3,7 @@
 
 
 n = int(input())
-
+out = ''
 for i in range(n):
     string = list(input())
     size = len(string)
@@ -15,6 +15,7 @@ for i in range(n):
 
     string = string[::-1]
 
-    print(''.join(string[:size//2]), end='')
+    out+=''.join(string[:size//2])
 
-    print(''.join( [ chr(int(ord(k)-1)) for k in string[size//2:] ] ))
+    out+=''.join( [ chr(int(ord(k)-1)) for k in string[size//2:] ] ) + '\n'
+print(out, end='')
